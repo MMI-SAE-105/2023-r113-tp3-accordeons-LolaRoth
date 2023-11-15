@@ -12,15 +12,15 @@
     <div class="accordeon", x-data="{menuIsOpen: 0}">
       <section>
         <button @click="menuIsOpen =1">bouton 1</button>
-        <p x-show="menuIsOpen===1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste amet incidunt quis ex excepturi cum veniam vero nobis harum consequuntur magni doloremque quasi libero, dolores aliquam possimus placeat reiciendis aspernatur?</p>
+        <p x-show="menuIsOpen===1", x-transition.scale.90.origin.left>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste amet incidunt quis ex excepturi cum veniam vero nobis harum consequuntur magni doloremque quasi libero, dolores aliquam possimus placeat reiciendis aspernatur?</p>
       </section>
       <section>
         <button @click="menuIsOpen=2">bouton 2</button>
-        <p x-show="menuIsOpen===2">Laborum quisquam modi inventore repellendus! Dolor at accusantium ex dolorum cum rem quidem, aperiam minima provident architecto natus debitis corporis, consequatur tenetur maxime itaque? Distinctio possimus nesciunt in autem. Magnam!</p>
+        <p x-show="menuIsOpen===2", x-transition.scale.90.origin.left>Laborum quisquam modi inventore repellendus! Dolor at accusantium ex dolorum cum rem quidem, aperiam minima provident architecto natus debitis corporis, consequatur tenetur maxime itaque? Distinctio possimus nesciunt in autem. Magnam!</p>
       </section>
       <section>
         <button @click="menuIsOpen=3">bouton 3</button>
-        <p x-show="menuIsOpen===3">Nobis earum odio similique reiciendis fugit possimus quam praesentium recusandae obcaecati adipisci eaque ullam aperiam unde suscipit, quod, aliquam porro ut sed in atque, a voluptates aut! Ipsam, iste cum.</p>
+        <p x-show="menuIsOpen===3", x-transition.scale.90.origin.left>Nobis earum odio similique reiciendis fugit possimus quam praesentium recusandae obcaecati adipisci eaque ullam aperiam unde suscipit, quod, aliquam porro ut sed in atque, a voluptates aut! Ipsam, iste cum.</p>
       </section>
     </div>
   </body>
