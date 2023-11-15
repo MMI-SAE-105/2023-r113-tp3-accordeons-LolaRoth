@@ -9,18 +9,18 @@
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-    <div class="accordeon", x-data="{menuIsOpen: false}", @click="menuIsOpen =! menuIsOpen">
+    <div class="accordeon", x-data="{menuIsOpen: 0}">
       <section>
-        <button>bouton 1</button>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste amet incidunt quis ex excepturi cum veniam vero nobis harum consequuntur magni doloremque quasi libero, dolores aliquam possimus placeat reiciendis aspernatur?</p>
+        <button @click="menuIsOpen =1">bouton 1</button>
+        <p x-show="menuIsOpen===1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste amet incidunt quis ex excepturi cum veniam vero nobis harum consequuntur magni doloremque quasi libero, dolores aliquam possimus placeat reiciendis aspernatur?</p>
       </section>
       <section>
-        <button>bouton 2</button>
-        <p>Laborum quisquam modi inventore repellendus! Dolor at accusantium ex dolorum cum rem quidem, aperiam minima provident architecto natus debitis corporis, consequatur tenetur maxime itaque? Distinctio possimus nesciunt in autem. Magnam!</p>
+        <button @click="menuIsOpen=2">bouton 2</button>
+        <p x-show="menuIsOpen===2">Laborum quisquam modi inventore repellendus! Dolor at accusantium ex dolorum cum rem quidem, aperiam minima provident architecto natus debitis corporis, consequatur tenetur maxime itaque? Distinctio possimus nesciunt in autem. Magnam!</p>
       </section>
       <section>
-        <button>bouton 3</button>
-        <p>Nobis earum odio similique reiciendis fugit possimus quam praesentium recusandae obcaecati adipisci eaque ullam aperiam unde suscipit, quod, aliquam porro ut sed in atque, a voluptates aut! Ipsam, iste cum.</p>
+        <button @click="menuIsOpen=3">bouton 3</button>
+        <p x-show="menuIsOpen===3">Nobis earum odio similique reiciendis fugit possimus quam praesentium recusandae obcaecati adipisci eaque ullam aperiam unde suscipit, quod, aliquam porro ut sed in atque, a voluptates aut! Ipsam, iste cum.</p>
       </section>
     </div>
   </body>
