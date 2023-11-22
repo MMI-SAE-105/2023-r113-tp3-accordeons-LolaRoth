@@ -5,8 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon horizontal</title>
+    <style>
+      ul#accordeon {
+        margin: 0;
+        padding: 0;
+        width: auto;
+      }
+      #accordeon li {
+        display: inline-block;
+        background-color: #eee;
+        width: 107px;
+        list-style-type: none;
+        margin: 3px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      ul#accordeon li.actif {
+        width: 317px;
+      }
+      ul#accordeon li figure {
+        margin: 0;
+        padding: 0;
+      }
+      ul#accordeon li figure {
+        display: table;
+        width: 317px;
+      }
+      ul#accordeon li figure figcaption {
+        width: 200px;
+        padding-left: 10px;
+        display: table-cell;
+        vertical-align: middle;
+
+      }
+      ul#accordeon li figure img {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    </style>
   </head>
   <body>
-    <h1>Accordéon horizontale</h1>
+    <h1>Accordéon horizontal</h1>
+    <ul id="accordeon">
+      <li>
+        <figure>
+          <img src="https://picsum.photos/100?random=1" alt="" width="102" />
+          <figcaption>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="actif">
+        <figure>
+          <img src="https://picsum.photos/100?random=2" alt="" width="102" />
+          <figcaption>
+            <h3>Nesciunt, saepe repudiandae.</h3>
+            <p>Vitae voluptas expedita possimus hic numquam.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="https://picsum.photos/100?random=3" alt="" width="102" />
+          <figcaption>
+            <h3>Minima, quis error.</h3>
+            <p>Quae aut fugiat quis ut laboriosam.</p>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
   </body>
 </html>
