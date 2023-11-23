@@ -9,19 +9,19 @@
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" </script>
     <style>
-     ul#panneaux {
+     ul#onglets{
       position: relative;
       height: 200px; /* adjust as needed */
       width: 200px; /* adjust as needed */
     }
     
-    ul#panneaux > div {
+    ul#onglets> div {
       position: absolute;
       opacity: 0;
       transition: opacity 0.5s;
     }
     
-    ul#panneaux > div.actif {
+    ul#onglets > div.actif {
       opacity: 1;
     }
     </style>
@@ -29,10 +29,10 @@
   <body>
     <div id="onglets" x-data="{ouvert : 1}">
     <h1>Onglets</h1>
-    <ul role="tablist">
-      <li role="tab" class="actif" @click="ouvert=1">Onglet 1</li>
-      <li role="tab" @click="ouvert=2">Onglet 2</li>
-      <li role="tab" @click="ouvert=3">Onglet 3</li>
+      <ul role="tablist">
+        <li role="tab" class="actif" @click="ouvert=1">Onglet 1</li>
+        <li role="tab" @click="{ouvert=2}">Onglet 2</li>
+        <li role="tab" @click="{ouvert=3}">Onglet 3</li>
     </ul>
     <div>
       <div role="tabpanel" :class="{actif:ouvert===1}"  >
