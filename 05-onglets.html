@@ -30,10 +30,12 @@
       background-color: palegreen;
     }
     </style>
+    <a href="/index.html">retour à l'accueil</a>
   </head>
   <body>
 
     <div id="onglets" x-data="{ouvert : 1}">
+      
     <h1>Onglets</h1>
       <ul role="tablist">
         <li role="tab" @click="ouvert=1" :class="{ 'actif': ouvert === 1 }">Onglet 1</li>
